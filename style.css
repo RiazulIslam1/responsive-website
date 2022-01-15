@@ -4,7 +4,6 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -252,6 +251,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
+    justify-content: center;
     grid-row-gap: 30px;
 }
 .popular-item{
@@ -297,6 +297,45 @@ body{
 .seemore-button i{
     padding-left: 12px;
     
+}
+/* contact section styles  */
+.contact-info{
+    margin-top: 200px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.contact-title{
+    font-size: 24px;
+    padding-left: 450px;
+    padding-bottom: 60px;
+}
+.contact-left img{
+    width: 90%;
+}
+.conatct-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-filled{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+    border: 1px solid #E02C6D;
+}
+.submit-button{
+    width: 100px;
+    height: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-style: none;
+    background-color: #E02C6D;
+    border-radius: 41px;
 }
 
 /* footer part styles  */
@@ -347,4 +386,71 @@ footer{
     padding-left: 16px;
     font-size: 24px;
     color: #FFFFFF;
+}
+
+/* responsive styles  */
+
+
+
+@media (max-width:950px){
+    .site-title{
+        margin-left: 50px;
+    }
+    .popular-title{
+        padding-left: 300px;
+    }
+    .popular-section{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .contact-title{
+        padding-left: 300px;
+    }
+    .influencer-container{
+        align-items: center;
+        justify-content: center;
+    }
+    .influencer-right{
+        margin-left: 50px;
+    }
+    .influencer-left{
+        width: 350px;
+    }
+    .influencer-title{
+        font-size: 36px;
+    }
+    .influencer-left p{
+        font-size: 14px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px){
+    .influencer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .popular-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .popular-title{
+        padding-left: 0;
+        text-align: center;
+    }
+    .contact-title{
+        padding-left: 0;
+        text-align: center;
+    }
+    .footer-container .footer-detailes{
+        padding-right: 0;
+    }
+    .influencer-title{
+        font-size: 28px;
+    }
+    .influencer-container img{
+        width: 80%;
+    }
 }
