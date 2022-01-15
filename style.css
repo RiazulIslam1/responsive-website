@@ -253,6 +253,7 @@ body{
     align-items: center;
     justify-content: center;
     grid-row-gap: 30px;
+    padding-left: 60px;
 }
 .popular-item{
     width: 300px;
