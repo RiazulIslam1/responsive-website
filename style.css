@@ -4,19 +4,27 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+
 }
 body{
-    width: 1200px;
+    font-family: 'Poppins', sans-serif;
+}
+/* common utlities */
+.container{
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 /* header styles  */
 .header-section{
     margin-top: 50px;
+    display: flex;
 }
 .site-title{
+    line-height: 36px;
+    margin-left: 250px;
+    font-size: 24px;
     color: #3A3A3A;
 }
 
@@ -33,6 +41,172 @@ body{
 .influencer-title{
     font-size: 52px;
     color: #3A3A3A;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.influencer-title::before{
+    content: "Journey as a Influencer";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #3A3A3A;
+    animation: typing 3s linear infinite;  
+}
+@keyframes typing{
+0%{
+    content: 'J|';
+}
+3%{
+    content: 'Jo|';
+}
+6%{
+    content: 'Jou|';
+}
+9%{
+    content: 'Jour|';
+}
+12%{
+    content: 'Journ|';
+}
+15%{
+    content: 'Journe|';
+}
+18%{
+    content: 'Journey|';
+}
+21%{
+    content: 'Journey |';
+}
+24%{
+    content: 'Journey a|';
+}
+27%{
+    content: 'Journey as|';
+}
+30%{
+    content: 'Journey as a|';
+}
+33%{
+    content: 'Journey as a |';
+}
+36%{
+    content: 'Journey as a I|';
+}
+39%{
+    content: 'Journey as a In|';
+}
+42%{
+    content: 'Journey as a Inf|';
+}
+45%{
+    content: 'Journey as a Infl|';
+}
+ 
+48%{
+    content: 'Journey as a Influ|';
+}
+51%{
+    content: 'Journey as a Influe|';
+}
+54%{
+    content: 'Journey as a Influen|';
+}
+57%{
+    content: 'Journey as a Influenc|';
+}
+60%{
+    content: 'Journey as a Influence|';
+}
+
+63%{
+    content: 'Journey as a Influencer|';
+}
+
+64%,
+77%{
+    content: 'Journey as a Influencer|';
+}
+
+78%{
+    content: 'Journey as a Influence|';
+}
+
+79%{
+    content: 'Journey as a Influenc|';
+}
+
+80%{
+    content: 'Journey as a Influen|';
+}
+
+81%{
+    content: 'Journey as a Influe|';
+}
+
+82%{
+    content: 'Journey as a Influ|';
+}
+
+83%{
+    content: 'Journey as a Infl|';
+}
+
+84%{
+    content: 'Journey as a Inf|';
+}
+
+85%{
+    content: 'Journey as a In|';
+}
+
+86%{
+    content: 'Journey as a I|';
+}
+
+87%{
+    content: 'Journey as a |';
+}
+88%{
+    content: 'Journey as a|';
+}
+89%{
+    content: 'Journey as |';
+}
+90%{
+    content: 'Journey as|';
+}
+91%{
+    content: 'Journey a|';
+}
+92%{
+    content: 'Journey |';
+}
+93%{
+    content: 'Journey|';
+}
+94%{
+    content: 'Journe|';
+}
+95%{
+    content: 'Journ|';
+}
+96%{
+    content: 'Jour|';
+}
+97%{
+    content: 'Jou|';
+}
+98%{
+    content: 'Jo|';
+}
+99%{
+    content: 'J|';
+}
+100%{
+    content: '|';
+}
+
 }
 .influencer-left p{
     line-height: 2;
@@ -111,16 +285,17 @@ body{
     padding: 10px 0;
     line-height: 1.5;
 }
-.seemore-button{
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
+
+#button .seemore-button{
+    display: block;
+    padding-left: 200px;
+    margin-top: 50px;
     font-size: 16px;
     color: #E02C6D;
     text-decoration: none;
 }
 .seemore-button i{
-    padding-left: 10px;
+    padding-left: 12px;
     
 }
 
@@ -128,6 +303,48 @@ body{
 
 footer{
     margin-top: 100px;
-    height: 100px;
+    height: 239px;
+    color: #FFFFFF;
     background-color: #0A0826;
+}
+
+.footer-container .footer-detailes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: 2;
+    padding-top: 55px;
+    padding-right: 80px;
+}
+.footer-title{
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+.footer-container p{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.footer-container small{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+#social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+#social-icon .fa-instagram{
+    padding-right: 16px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+#social-icon .fa-youtube{
+    font-size: 24px;
+    color: #FFFFFF;
+}
+#social-icon .fa-twitter{
+    padding-left: 16px;
+    font-size: 24px;
+    color: #FFFFFF;
 }
